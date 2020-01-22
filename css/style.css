@@ -1,0 +1,15 @@
+main {
+    width: 100vw;
+    display: flex;
+}
+
+section {
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
