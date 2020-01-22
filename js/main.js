@@ -16,13 +16,17 @@ $(".defence-force").on("click", function(){
     $(this).css("width", "100vw")
     $(this).css("height", "100vh")
     $(this).addClass("active")
-    $(this).addClass("active")
-    
-    var html = "<button>X</button>"
-    
+    var html = "<button class=\"closebtn\">X</button>"
     $(this).append(html)
     
 
 })
+
+$(document).on('click', '.closebtn', function(){ 
+    // Your Code
+    $("header").css("display", "flex")
+    $(".defence-force").removeAttr("style")
+    $(".defence-force").removeClass("active")
+});
 
 
