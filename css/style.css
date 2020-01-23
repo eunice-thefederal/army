@@ -18,7 +18,7 @@ p{
 .wrapper{
   display: grid;
 }
-header {
+.tfi-wrapper header {
   width: 100vw;
   height: 32vh;
   background: #fff;
@@ -35,37 +35,37 @@ header {
   box-sizing: border-box;
   text-align: center;
 }
-header .content h1{
+.tfi-wrapper header .content h1{
   margin-bottom: 15px;
   line-height: 36px;
   font-size: 32px;
 }
-header .content p{
+.tfi-wrapper header .content p{
   line-height: 20px;
   font-size: 16px;
 }
-main {
+.tfi-wrapper main {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 68vh;
 }
-section {
+.tfi-wrapper section {
   text-align: center;
   -webkit-transition: all 0.2s cubic-bezier(0.61, -0.44, 0.33, 1.39);
   transition: all 0.2s cubic-bezier(0.61, -0.44, 0.33, 1.39);
 }
-section .content{
+.tfi-wrapper section .content{
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
 }
-section .content img{
+.tfi-wrapper section .content img{
   width: 60px;
 }
-section .content h1{
+.tfi-wrapper section .content h1{
   margin-top: -15px;
 }
-.closebtn {
+.tfi-wrapper .closebtn {
   border: none;
   background: transparent;
   font-size: 45px;
@@ -75,21 +75,21 @@ section .content h1{
   font-weight: 100;
 }
 @media screen and (min-width: 981px) {
-  header .content h1{
+  .tfi-wrapper header .content h1{
       font-size: 40px;
  }
-  header {
+  .tfi-wrapper header {
       height: 20vh;
  }
-  header .content {
+  .tfi-wrapper header .content {
       width: 100%;
       max-width: 800px;
  }
-  main {
+ .tfi-wrapper main {
       display: flex;
       height: 80vh;
  }
-  section {
+ .tfi-wrapper section.defence-force {
       width: 25vw;
       display: -webkit-box;
       display: flex;
@@ -98,75 +98,87 @@ section .content h1{
       -webkit-box-pack: center;
       justify-content: center;
  }
-  section:nth-child(odd) {
+ .tfi-wrapper section.defence-force:nth-child(odd) {
       background: #c6e8fd;
  }
-  section:nth-child(even) {
+  section.defence-force:nth-child(even) {
       background: #FFFFFF;
  }
-  section .content img{
+  section.defence-force .content img{
       width: 100%;
       max-width: 200px;
  }
-  section .content h2{
+  section.defence-force .content h2{
       font-size: 55px;
       line-height: 60px;
       color: #305868;
       margin-top: -15px;
  }
  section.defence-force.active{
-   background-color: #2980b9;
+   background: #bbbbbb !important;
  }
   section.defence-force.active .content h2{
-      font-size: 190px;
-      line-height: 160px;
+      /* 
       margin-left: -300px;
-      margin-top: -70px;
+      margin-top: -70px; */
+      position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    font-size: 190px;
+      line-height: 160px;
+    margin-left: -80px;
+    z-index: 25;
  }
   section.defence-force.active .content{
       max-width: 960px;
  }
-  section.defence-force.active .interactive-content{
-      display: flex;
-      width: 96%;
-      align-items: center;
+ .interactive-content{
+  width: 54%;
+    height: 65%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
  }
-  section.defence-force.active .uniform{
-      width: 40%;
- }
-  section.defence-force.active .medals{
-
-      width: 60%;
- }
-  section.defence-force.active .otherbadges{
-
-      width: 60%;
- }
-  section.defence-force.active .medals svg{
-      width: 95%;
- }
-  section.defence-force.active .medalinfo{
-      display: flex;
- }
-  section.defence-force.active .medalimg{
-      flex: 1;
- }
-  section.defence-force.active .medalimg img{
-      width: 70%;
- }
-  section.defence-force.active .medaltxt{
-      flex: 2;
+ .interactive-content .interactiveforce{
+   display: flex;
+   align-items: center;
  }
 
-  section.defence-force.active .badgeimg{
-      flex: 1;
+ .interactive-content .interactiveforce .uniform{
+   width: 40%;
  }
-  section.defence-force.active .badgeimg img{
-      width: 70%;
+ .interactive-content .interactiveforce .modal-content{
+   width: 60%;
+   margin-top: -50px;
  }
-  section.defence-force.active .badgetxt{
-      flex: 2;
+ 
+ .interactive-content .interactiveforce .modal-content .otherbadges{
+    display: flex;
+    display: flex;
+    align-items: center;
  }
+ 
+ .interactive-content .interactiveforce .modal-content .otherbadges .badgeimg{
+    flex: 1;
+ }
+ .interactive-content .interactiveforce .modal-content .otherbadges .badgetxt{
+    flex: 2;
+ }
+
+ .interactive-content .interactiveforce .modal-content .medalinfo{
+  display: flex; align-items: center;
+}
+.interactive-content .interactiveforce .modal-content .medalimg{
+  flex: 1;
+}
+.interactive-content .interactiveforce .modal-content .medalimg img{
+  width: 70%;
+}
+.interactive-content .interactiveforce .modal-content .medaltxt{
+  flex: 2;
+}
+ 
 }
 @media screen and (max-width: 980px) {
   section:nth-child(1), section:nth-child(4) {

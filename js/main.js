@@ -8,21 +8,28 @@
 
 $(".main-badge").on("click", function(){
 
+    var checkdata = $(this).data()
 
-
-    $("header").css("display", "none")
+    console.log(checkdata.force);
+    
     $(".defence-force").css("display", "none")
+    $(".defence-force."+checkdata.force).css("display", "flex")
+    $(".defence-force."+checkdata.force).css("width", "100vw")
+    $(".defence-force."+checkdata.force).css("height", "100vh")
+    $(".defence-force."+checkdata.force).addClass("active")
 
-    $(".uniform").css("display", "block")
+    $(".interactive-content").css("display", "block")
+    // $(".interactive-content").css("width", "100%")
+    // $(".interactive-content").css("height", "100%")
+    // $(".interactive-content").css("position", "absolute")
+    $(".interactive-content").css("display", "block")
+    $("header").css("display", "none")
+    // $(".uniform").css("display", "block")
     $(".main-badge").css("display", "none")
-    $(".otherbadges").css("display", "flex")
-    // $(".medals").css("display", "block")
-    $(".defence-force").css("display", "flex")
-    $(".defence-force").css("width", "100vw")
-    $(".defence-force").css("height", "100vh")
-    $(".defence-force").addClass("active")
-    var html = "<button class=\"closebtn\">X</button>"
-    $(".defence-force").append(html)
+    // $(".otherbadges").css("display", "flex")
+    // // $(".medals").css("display", "block")
+    // var html = "<button class=\"closebtn\">X</button>"
+    // $(".defence-force").append(html)
 
     
 
@@ -32,10 +39,10 @@ $(document).on('click', '.closebtn', function(){
     // Your Code
     $("header").css("display", "flex")
     $(".medals").css("display", "none")
-    $(".otherbadges").css("display", "none")
+    // $(".otherbadges").css("display", "none")
     $(".defence-force").removeAttr("style")
     $(".defence-force").removeClass("active")
-    $(".uniform").css("display", "none")
+    $(".interactive-content").css("display", "none")
     $(".main-badge").css("display", "block")
     $(".main-badge").removeAttr("style")
 });
