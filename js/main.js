@@ -35,6 +35,7 @@ $(document).on('click', '.closebtn', function(){
     $(".defence-force").removeClass("active")
     $(".uniform").css("display", "none")
     $(".main-badge").css("display", "block")
+    $(".main-badge").removeAttr("style")
 });
 
 
