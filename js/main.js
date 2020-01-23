@@ -19,6 +19,7 @@ $(".main-badge").on("click", function(){
     $(".defence-force."+checkdata.force).addClass("active")
 
     $(".interactive-content").css("display", "block")
+    $("#"+checkdata.force+"-uniform").css("display", "block")
     // $(".interactive-content").css("width", "100%")
     // $(".interactive-content").css("height", "100%")
     // $(".interactive-content").css("position", "absolute")
@@ -43,6 +44,7 @@ $(document).on('click', '.closebtn', function(){
     $(".defence-force").removeAttr("style")
     $(".defence-force").removeClass("active")
     $(".interactive-content").css("display", "none")
+    $(".uniform svg").css("display", "none")
     $(".main-badge").css("display", "block")
     $(".main-badge").removeAttr("style")
 });
