@@ -6,7 +6,7 @@
 
 // })
 
-$(".defence-force").on("click", function(){
+$(".main-badge").on("click", function(){
 
 
 
@@ -17,12 +17,12 @@ $(".defence-force").on("click", function(){
     $(".main-badge").css("display", "none")
     $(".otherbadges").css("display", "flex")
     // $(".medals").css("display", "block")
-    $(this).css("display", "flex")
-    $(this).css("width", "100vw")
-    $(this).css("height", "100vh")
-    $(this).addClass("active")
+    $(".defence-force").css("display", "flex")
+    $(".defence-force").css("width", "100vw")
+    $(".defence-force").css("height", "100vh")
+    $(".defence-force").addClass("active")
     var html = "<button class=\"closebtn\">X</button>"
-    $(this).append(html)
+    $(".defence-force").append(html)
 
     
 
@@ -42,47 +42,64 @@ $(document).on('click', '.closebtn', function(){
 
 $('.cap-badge').on("click", function(){
 
-    alert("cap-badge")
+    // alert("cap-badge")
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
 
 })
 
 $('.shoulder-strap').on("click", function(){
 
-    alert("shoulder-strap")
+    // alert("shoulder-strap")
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
 
 })
 
 $('.army-braid').on("click", function(){
 
-    alert("army-braid")
+    // alert("army-braid")
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
 
 })
 
 $('.army-nametag').on("click", function(){
 
-    alert("army-nametag")
+    // alert("army-nametag")
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
 
 })
 
 $('.badge1').on("click", function(){
 
-    alert("badge1")
+    // alert("badge1")
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
 
 })
 
 $('.badge2').on("click", function(){
 
-    alert("badge2")
+    // alert("badge2")
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
 
 })
 $('.collar').on("click", function(){
 
-    alert("collar")
+    // alert("collar")
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
 
 })
 $('.medals-of-honour').on("click", function(){
 
-    alert("medals-of-honour")
+    // alert("medals-of-honour");
+    $(".medals").css("display", "block");
+    $(".otherbadges").css("display", "none");
+
 
 })
 // cap-badge
