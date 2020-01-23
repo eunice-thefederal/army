@@ -12,6 +12,9 @@ $(".defence-force").on("click", function(){
 
     $("header").css("display", "none")
     $(".defence-force").css("display", "none")
+
+    $(".uniform").css("display", "block")
+    $(".main-badge").css("display", "none")
     $(".medals").css("display", "block")
     $(this).css("display", "flex")
     $(this).css("width", "100vw")
@@ -30,6 +33,8 @@ $(document).on('click', '.closebtn', function(){
     $(".medals").css("display", "none")
     $(".defence-force").removeAttr("style")
     $(".defence-force").removeClass("active")
+    $(".uniform").css("display", "none")
+    $(".main-badge").css("display", "block")
 });
 
 

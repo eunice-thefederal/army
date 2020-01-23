@@ -127,7 +127,7 @@ section .content h1{
       display: flex;
       width: 96%;
  }
-  section.defence-force.active .army-nav{
+  section.defence-force.active .uniform{
      /* flex: 1;
       */
       width: 40%;
