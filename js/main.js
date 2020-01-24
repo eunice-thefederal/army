@@ -58,55 +58,67 @@ $('.cap-badge').on("click", function(){
     // alert("cap-badge")
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
-
+    var checkdata = $(this).data();
+    console.log(checkdata.force)
+    
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/cap-badge.png");
 })
 
 $('.shoulder-strap').on("click", function(){
-
-    // alert("shoulder-strap")
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    alert("shoulder-strap:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
 
 })
 
-$('.army-braid').on("click", function(){
-
-    // alert("army-braid")
+$('.aiguillette').on("click", function(){
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    alert("shoulder-strap:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
 
 })
 
-$('.army-nametag').on("click", function(){
-
-    // alert("army-nametag")
+$('.paratrooper-badge').on("click", function(){
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    alert("paratrooper-badge:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
 
 })
 
-$('.badge1').on("click", function(){
-
-    // alert("badge1")
+$('.rashtriya-rifle').on("click", function(){
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    alert("rashtriya-rifle:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
 
 })
 
-$('.badge2').on("click", function(){
+$('.assam-rifle').on("click", function(){
 
-    // alert("badge2")
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    alert("assam-rifle:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
 
 })
 $('.collar').on("click", function(){
 
-    // alert("collar")
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    alert("collar:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
 
 })
+
 $('.medals-of-honour').on("click", function(){
 
     // alert("medals-of-honour");
@@ -115,13 +127,17 @@ $('.medals-of-honour').on("click", function(){
 
 
 })
-// cap-badge
-// shoulder-strap
-// army-braid
-// army-nametag
-// badge1
-// badge2
-// collar
-// medals-of-honour
+
+
+// Commendation Badge
+$('.coas-commendation').on("click", function(){
+
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    alert("collar:"+checkdata)
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+
+})
 
 
