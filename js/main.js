@@ -20,18 +20,11 @@ $(".main-badge").on("click", function(){
 
     $(".interactive-content").css("display", "block")
     $("#"+checkdata.force+"-uniform").css("display", "block")
-    // $(".interactive-content").css("width", "100%")
-    // $(".interactive-content").css("height", "100%")
-    // $(".interactive-content").css("position", "absolute")
     $(".interactive-content").css("display", "block")
     $("header").css("display", "none")
-    // $(".uniform").css("display", "block")
     $(".main-badge").css("display", "none")
-    // $(".otherbadges").css("display", "flex")
-    // // $(".medals").css("display", "block")
-    // var html = "<button class=\"closebtn\">X</button>"
-    // $(".defence-force").append(html)
-
+    $(".content h2").css("display","none")
+    $("#"+ checkdata.force +"-head").addClass("active")
     
 
 })
@@ -47,6 +40,8 @@ $(document).on('click', '.closebtn', function(){
     $(".uniform svg").css("display", "none")
     $(".main-badge").css("display", "block")
     $(".main-badge").removeAttr("style")
+    $(".content h2").css("display","block")
+    $(".heads").removeClass("active")
 });
 
 
