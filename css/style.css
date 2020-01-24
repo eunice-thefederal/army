@@ -84,6 +84,42 @@ section.defence-force.active .content h2{
 section.defence-force.active{
   background: #bbbbbb !important;
 }
+
+.interactive-content{
+  width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /*transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;*/
+ }
+ .interactive-content .interactiveforce{
+   display: flex;
+   align-items: center;
+     width: 54%;
+    height: 65%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
+ }
+
+
+.heads {
+  display: none;
+}
+
+.heads.active {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  font-size: 55px;
+  line-height: 60px;
+  color: #305868;
+}
+
 @media screen and (min-width: 981px) {
   .tfi-wrapper header .content h1{
       font-size: 40px;
