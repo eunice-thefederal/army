@@ -49,6 +49,10 @@ $(document).on('click', '.closebtn', function(){
     $(".main-badge").removeAttr("style")
 });
 
+
+
+
+
 $('.cap-badge').on("click", function(){
 
     // alert("cap-badge")
