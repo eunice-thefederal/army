@@ -67,34 +67,36 @@ $('.cap-badge').on("click", function(){
 $('.shoulder-strap').on("click", function(){
     var checkdata = $(this).data();
     // console.log(checkdata.force)
-    alert("shoulder-strap:"+checkdata)
+    // alert("shoulder-strap:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/shoulder-strap.png");
 
 })
 
 $('.aiguillette').on("click", function(){
     var checkdata = $(this).data();
     // console.log(checkdata.force)
-    alert("shoulder-strap:"+checkdata)
+    // alert("shoulder-strap:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/aiguillette.png");
 
 })
 
-$('.paratrooper-badge').on("click", function(){
+$('.chest-badge').on("click", function(){
     var checkdata = $(this).data();
     // console.log(checkdata.force)
-    alert("paratrooper-badge:"+checkdata)
+    // alert("paratrooper-badge:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
-
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/chest-badges.png");
 })
 
 $('.rashtriya-rifle').on("click", function(){
     var checkdata = $(this).data();
     // console.log(checkdata.force)
-    alert("rashtriya-rifle:"+checkdata)
+    // alert("rashtriya-rifle:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
 
@@ -104,7 +106,7 @@ $('.assam-rifle').on("click", function(){
 
     var checkdata = $(this).data();
     // console.log(checkdata.force)
-    alert("assam-rifle:"+checkdata)
+    // alert("assam-rifle:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
 
@@ -113,10 +115,10 @@ $('.collar').on("click", function(){
 
     var checkdata = $(this).data();
     // console.log(checkdata.force)
-    alert("collar:"+checkdata)
+    // alert("collar:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
-
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/collar.png");
 })
 
 $('.medals-of-honour').on("click", function(){
