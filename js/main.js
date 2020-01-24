@@ -88,24 +88,6 @@ $('.chest-badge').on("click", function(){
     $(".badgeimg img").attr("src", "img/"+checkdata.force+"/chest-badges.png");
 })
 
-$('.rashtriya-rifle').on("click", function(){
-    var checkdata = $(this).data();
-    // console.log(checkdata.force)
-    // alert("rashtriya-rifle:"+checkdata)
-    $(".medals").css("display", "none");
-    $(".otherbadges").css("display", "flex");
-
-})
-
-$('.assam-rifle').on("click", function(){
-
-    var checkdata = $(this).data();
-    // console.log(checkdata.force)
-    // alert("assam-rifle:"+checkdata)
-    $(".medals").css("display", "none");
-    $(".otherbadges").css("display", "flex");
-
-})
 $('.collar').on("click", function(){
 
     var checkdata = $(this).data();
@@ -114,6 +96,16 @@ $('.collar').on("click", function(){
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
     $(".badgeimg img").attr("src", "img/"+checkdata.force+"/collar.png");
+})
+
+$('.cross-belt').on("click", function(){
+
+    // var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    // alert("collar:"+checkdata)
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/cds/cross-belt.png");
 })
 
 $('.medals-of-honour').on("click", function(){
@@ -125,15 +117,43 @@ $('.medals-of-honour').on("click", function(){
 
 })
 
+$('.rashtriya-rifle').on("click", function(){
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    // alert("rashtriya-rifle:"+checkdata)
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/rashtriya-rifle.png");
+})
+
+$('.assam-rifle').on("click", function(){
+
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    // alert("assam-rifle:"+checkdata)
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+
+})
+$('.red-commendation').on("click", function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/red-commendation.png");
+
+})
+
 
 // Commendation Badge
 $('.coas-commendation').on("click", function(){
 
     var checkdata = $(this).data();
     // console.log(checkdata.force)
-    alert("collar:"+checkdata)
+    // alert("collar:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/coas.png");
 
 })
 
