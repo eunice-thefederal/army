@@ -143,6 +143,30 @@ $('.red-commendation').on("click", function(){
     $(".badgeimg img").attr("src", "img/"+checkdata.force+"/red-commendation.png");
 
 })
+$('.ats-badge').on("click", function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/ats-badge.png");
+
+})
+$('.master-green').on("click", function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/master-green.png");
+
+})
+$('.ats-badge').on("click", function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/ats-badge.png");
+
+})
 
 
 // Commendation Badge
