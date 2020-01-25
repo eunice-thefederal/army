@@ -220,7 +220,7 @@ var allmedals = {
     },
     slim: {
         name:"Sikh Light Infantry medal",
-        desc: "The Sikh Light Infantry is a light infantry regiment of the Indian Army. The regiment recruits from the Sikh community of Himachal Pradesh, Punjab and Haryana states of India. The regimental motto is "Deg Tegh Fateh", meaning "prosperity in peace and victory in war"."
+        desc: "The Sikh Light Infantry is a light infantry regiment of the Indian Army. The regiment recruits from the Sikh community of Himachal Pradesh, Punjab and Haryana states of India. The regimental motto is \"Deg Tegh Fateh\", meaning \"prosperity in peace and victory in war\"."
     },
     vm: {
         name:"Vayu Sena Medal (VM)",
