@@ -23,6 +23,7 @@ $(".main-badge").click(function(){
     $(".interactive-content").css("display", "block")
     $("header").css("display", "none")
     $(".main-badge").css("display", "none")
+    $(".badgeimg img").attr("src", "https://thefederal.com/embed/army-master/img/"+checkdata.force+"/cap-badge.png")
     $(".content h2").css("display","none")
     $("#"+ checkdata.force +"-head").addClass("active")
     
@@ -57,6 +58,8 @@ $('.cap-badge').click(function(){
     console.log(checkdata.force)
     
     $(".badgeimg img").attr("src", "https://thefederal.com/embed/army-master/img/"+checkdata.force+"/cap-badge.png");
+
+    
 })
 
 $('.shoulder-strap').click(function(){
