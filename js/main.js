@@ -18,6 +18,7 @@ $(".main-badge").click(function(){
     $(".defence-force."+checkdata.force).css("height", "100vh")
     $(".defence-force."+checkdata.force).addClass("active")
 
+    $("#"+checkdata.force+"-medals").css("display", "block")
     $(".interactive-content").css("display", "block")
     $("#"+checkdata.force+"-uniform").css("display", "block")
     $(".interactive-content").css("display", "block")
@@ -38,6 +39,7 @@ $(".closebtn").click(function(){
     // Your Code
     $("header").css("display", "flex")
     $(".medals").css("display", "none")
+    $(".defence-medals").css("display", "none")
     // $(".otherbadges").css("display", "none")
     $(".defence-force").removeAttr("style")
     $(".defence-force").removeClass("active")
