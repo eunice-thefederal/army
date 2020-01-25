@@ -156,3 +156,90 @@ var forcedata = {
         }
     }
 }
+
+var allmedals = {
+    pvsm: {
+        name:"Param Vishisht Seva Medal (PVSM)",
+        desc: "Param Vishisht Seva Medal is a military award of India constituted in 1960. It is awarded in recognition to peace-time service of the most exceptional order."
+    },
+    uysm: {
+        name:"Uttam Yudh Seva Medal",
+        desc: "One of India's military decorations for Wartime Distinguished Service is awarded for a high degree of distinguished services in an operational context. 'Operational context' includes times of war, conflict, or hostilities."
+    },
+    avsm: {
+        name:"Ati Vishisht Seva Medal (AVSM)",
+        desc: "Ati Vishisht Seva Medal is a military award of India given to recognize \"distinguished service of an exceptional order\" to all ranks of the armed forces. The award is a peacetime equivalent of Uttam Yuddh Seva Medal, which is a Wartime Distinguished Service decoration."
+    },
+    ysm: {
+        name:"Yudh Seva Medal",
+        desc: "India's military award for distinguished service during wartime. It is awarded for a high degree of distinguished service in an operational context, which includes times of war, conflict, or hostilities and maybe awarded posthumously."
+    },
+    sm: {
+        name:"Sena Medal",
+        desc: "The Sena Medal is awarded to members of the Indian army, of all ranks, \"for such individual acts of exceptional devotion to duty or courage as having special significance for the Army.\" Awards may be made posthumously and a bar is authorized for subsequent awards of the Sena Medal."
+    },
+    vsm1: {
+        name:"Vishisht Seva Medal",
+        desc: "The Vishisht Seva Medal is a decoration of the Indian armed forces. It is awarded to recognize \"distinguished service of a high order\" to all ranks of the Indian Armed forces. The award may be granted posthumously and subsequent awards are represented by a bar worn on the ribbon."
+    },
+    wm: {
+        name:"Wound Medal",
+        desc: "The Wound Medal or Parakram Padak is an Indian Military award is given to those who sustain \"wounds as a result of direct enemy action in any type of operations or counter-insurgency actions.\" The medal was established in 1973, by the President of India for wounds backdated to 15 August 1947."
+    },
+    ssm1: {
+        name:"Samanya Seva Medal",
+        desc: "The Samanya Seva Medal 1965 is a military service medal of the Indian Armed Forces. Established 8 May 1975, with retroactive effect to 26 January 1965, the Samanya Seva Medal is awarded for active service where no other campaign medal is awarded. Clasps are awarded the medal designating recognized operations."
+    },
+    ssm2: {
+        name:"Special Service Medal",
+        desc: "The medal shall be awarded for services rendered by the Armed Forces personnel under active service conditions or conditions akin thereto. The medal shall be awarded for minor, short-duration operations. An individual qualifying for the Medal for the first time shall be awarded the medal together with a clasp indicating the particular operation for which it is awarded.  For all subsequent operations for which the issue of a Clasp is approved, only the Clasp indicating the particular operation shall be awarded.  The bar of the clasp shall have the name of the place of the operation engraved on it."
+    },
+    opm: {
+        name:"Operation Parakram Medal",
+        desc: "It was awarded in recognition of the services of Armed Forces personnel and civilians in Operation Parakram -  India–Pakistan standoff in 2001-02. All ranks of the Indian Armed Forces including Territorial Army, Auxiliary and Reserve Forces, Nursing officers and other members of the Nursing services and other lawfully constituted Armed Forces who were involved in the operation were awarded the medal."
+    },
+    ssm3: {
+        name:"Sainya Seva Medal",
+        desc: "The medal is awarded in recognition of non-operational service under conditions of hardship and severe climate in specified areas. Bipin Rawat served in Jammu and Kashmir."
+    },
+    hasm: {
+        name:"High Altitude Service Meda",
+        desc: "High Altitude Service Medal is honoured for an only special rank of the Indian Army, \"For such personal acts of extraordinary dedication of duty or courage as special significance for the army.\"Awards can be made posthumously and once Is authorized for high-altitude medal afterwards."
+    },
+    vsm2: {
+        name:"Videsh Sewa Medal",
+        desc: "Awarded to personnel for services rendered outside India and for such periods as may be recognised by the Government for the purposes of this award and which has not been considered for any other Indian Medal. (Rawat has served in Congo and Myanmar)"
+    },
+    ii50: {
+        name:"50th anniversary of Independence India",
+        desc: "The medal is awarded to the personnel of the following forces who were borne on the effective strength on the 15 th August 1997: All ranks of the Army, the Navy, the Air Force and other Reserve Forces, Territorial Army and any other armed forces of the Union. All ranks of the Railway Protection Force, Police Forces, Personnel of Central Police Organisations including Paramilitary Forces, Home Guards, Civil Defence Organisation, Fire Services and any other organization specified by the Government. "
+    },
+    monusco: {
+        name:"MONUSCO",
+        desc: "A United Nations Medal is an international decoration awarded by the United Nations (UN) to the various world countries members for participation in joint international military and police operations such as peacekeeping, humanitarian efforts, and disaster relief.[1] The medal is ranked in militaries and police forces as a service medal. [United Nations Organization Stabilization Mission in the The Democratic Republic of the Congo (French: Mission de l'Organisation des Nations Unies pour la Stabilisation en République Démocratique du Congo, MONUSCO) is the United Nations Organization Stabilization Mission in the Democratic Republic of the Congo]"
+    },
+    slim: {
+        name:"Sikh Light Infantry medal",
+        desc: "The Sikh Light Infantry is a light infantry regiment of the Indian Army. The regiment recruits from the Sikh community of Himachal Pradesh, Punjab and Haryana states of India. The regimental motto is "Deg Tegh Fateh", meaning "prosperity in peace and victory in war"."
+    },
+    vm: {
+        name:"Vayu Sena Medal (VM)",
+        desc: "The Vayu Sena Medal is an Indian military decoration, usually awarded in peacetime for a job well done."
+    },
+    ovm: {
+        name:"Operation Vijay Medal",
+        desc: "The Operation Vijay Medal is a service medal that recognises Armed Forces personnel and civilians who were part of the larger Indian armed forces fraternity including the Army, Navy and Air Force, and who was involved or mobilized during operations at various field locations as well as Headquarters during Operation Vijay (Kargil war) in 1999."
+    },
+    thirtyyears: {
+        name:"30 Years Long Service Medal",
+        desc: "Given when the personnel completes 30 years in Indian defence forces."
+    },
+    twentyyears: {
+        name:"20 Years Long Service Medal",
+        desc: "Given when the personnel completes 20 years in Indian defence forces."
+    },
+    nineyears: {
+        name:"9 Years Long Service Medal",
+        desc: "Given when the personnel completes 9 years in Indian defence forces."
+    },
+}
