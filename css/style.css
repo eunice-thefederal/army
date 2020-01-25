@@ -1,4 +1,4 @@
-* {
+.tfi-wrapper * {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -9,12 +9,19 @@
 ::-webkit-scrollbar {
   display: none;
 }
-h1, h2{
+.tfi-wrapper h1,.tfi-wrapper  h2{
   font-family: 'Playfair Display', serif;
 }
-p{
+.tfi-wrapper p{
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+.tfi-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .wrapper{
   display: grid;
 }
@@ -222,6 +229,8 @@ section.defence-force.active{
   }
   .interactive-content .interactiveforce {
     width: 100%;
+    height: 50%;
+    top: 38%;
   }
   .interactive-content .interactiveforce .modal-content {
     margin-top: 0;
@@ -243,5 +252,15 @@ section.defence-force.active{
   .heads.active {
     text-align: center;
     left: 0;
+    bottom: 25%;
+  }
+  .tfi-wrapper .closebtn {
+      font-size: 30px;
+  }
+  .tfi-wrapper section.defence-force:nth-child(4) {
+      background: #c6e8fd;
+  }
+  .tfi-wrapper section.defence-force:nth-child(3) {
+      background: #ffffff;
   }
 }

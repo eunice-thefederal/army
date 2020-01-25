@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s cubic-bezier(0.61, -0.44, 0.33, 1.39);
+  transition: all 0.2s cubic-bezier(0.61, -0.44, 0.33, 1.39);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+h1, h2{
+  font-family: 'Playfair Display', serif;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.wrapper{
+  display: grid;
+}
+.tfi-wrapper header {
+  width: 100vw;
+  height: 20vh;
+  background: #fff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  padding: 0 25px;
+  z-index: 10;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+}
+.tfi-wrapper header .content h1{
+  margin-bottom: 15px;
+  line-height: 36px;
+  font-size: 32px;
+}
+.tfi-wrapper header .content p{
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.tfi-wrapper section {
+  text-align: center;
+  -webkit-transition: all 0.2s cubic-bezier(0.61, -0.44, 0.33, 1.39);
+  transition: all 0.2s cubic-bezier(0.61, -0.44, 0.33, 1.39);
+}
+.tfi-wrapper section .content{
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.tfi-wrapper section .content h1{
+  margin-top: -15px;
+}
+.tfi-wrapper .closebtn {
+  border: none;
+  background: transparent;
+  font-size: 45px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-weight: 100;
+}
+section.defence-force.active .content h2{
+
+  position: absolute;
+  bottom: 0;
+  z-index: 25;
+}
+
+section.defence-force.active{
+  background: #bbbbbb !important;
+}
+
+
+
+  .tfi-wrapper header .content {
+      width: 100%;
+      max-width: 800px;
+ }
+ .tfi-wrapper main {
+      display: flex;
+      height: 80vh;
+ }
+ .tfi-wrapper section.defence-force {
+      width: 25vw;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+ }
+ .tfi-wrapper section.defence-force:nth-child(odd) {
+      background: #c6e8fd;
+ }
+  section.defence-force:nth-child(even) {
+      background: #FFFFFF;
+ }
+  section.defence-force .content img{
+      width: 100%;
+      max-width: 200px;
+ }
+  section.defence-force .content h2{
+      font-size: 55px;
+      line-height: 60px;
+      color: #305868;
+      margin-top: -15px;
+ }
+
+  section.defence-force.active .content h2{
+
+    font-size: 190px;
+      line-height: 160px;
+    margin-left: -80px;
+ }
+  section.defence-force.active .content{
+      max-width: 960px;
+ }
+ .interactive-content{
+  width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /*transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;*/
+ }
+ .interactive-content .interactiveforce{
+   display: flex;
+   align-items: center;
+     width: 54%;
+    height: 65%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
+ }
+
+.interactive-content .interactiveforce .uniform{
+   width: 40%;
+ }
+ .interactive-content .interactiveforce .modal-content{
+   width: 60%;
+   margin-top: -50px;
+ }
+ 
+ .interactive-content .interactiveforce .modal-content .otherbadges{
+    display: flex;
+    /*display: flex;*/
+    align-items: center;
+ }
+ 
+ .interactive-content .interactiveforce .modal-content .otherbadges .badgeimg{
+    flex: 1;
+ }
+ .interactive-content .interactiveforce .modal-content .otherbadges .badgetxt{
+    flex: 2;
+ }
+
+ .interactive-content .interactiveforce .modal-content .medalinfo{
+  display: flex; align-items: center;
+}
+.interactive-content .interactiveforce .modal-content .medalimg{
+  flex: 1;
+}
+.interactive-content .interactiveforce .modal-content .medalimg img{
+  width: 70%;
+}
+.interactive-content .interactiveforce .modal-content .medaltxt{
+  flex: 2;
+}
+
+
+.heads {
+  display: none;
+}
+
+.heads.active {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  font-size: 55px;
+  line-height: 60px;
+  color: #305868;
+}
+
+
+@media screen and (max-width: 767px) {
+  .tfi-wrapper header {
+      height: 32vh;
+ }
+   .tfi-wrapper header .content h1{
+        font-size: 30px;
+   }
+  .tfi-wrapper main {
+
+      display: grid;
+      height: 68vh;
+      grid-column: 50%;
+      grid-template-columns: 50% 50%;
+
+  }
+  .tfi-wrapper section .content img{
+    max-width: 60px;
+  }
+  .tfi-wrapper section.defence-force {
+    width: 100%;
+  }
+  section.defence-force .content h2 {
+    font-size: 40px;
+
+  line-height: 42px;
+  }
+  .interactive-content .interactiveforce {
+    width: 100%;
+  }
+  .interactive-content .interactiveforce .modal-content {
+    margin-top: 0;
+  }
+  .interactive-content .interactiveforce .modal-content .otherbadges {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  } 
+  .interactive-content .interactiveforce .modal-content .otherbadges .badgeimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .interactive-content .interactiveforce .modal-content .otherbadges .badgeimg img {
+    max-width: 100px;
+  }
+  .heads.active {
+    text-align: center;
+    left: 0;
+  }
+}
