@@ -55,6 +55,20 @@ $(".closebtn").click(function(){
 
 
 
+$('.all-medals').click(function(){
+    var checkdata = $(this).data();
+    console.log(allmedals[checkdata.medal])
+
+    if(checkdata.medal !== "medalna"){
+        $(".medalimg img").attr("src", "img/medals/"+checkdata.medal+".png");
+        $(".medaltxt h3").text(allmedals[checkdata.medal]["name"]);
+        $(".medaltxt p").text(allmedals[checkdata.medal]["desc"]);
+
+    }
+    
+    
+})
+
 $('.cap-badge').click(function(){
 
     // alert("cap-badge")
@@ -157,6 +171,10 @@ $('.medals-of-honour').click(function(){
     // alert("medals-of-honour");
     $(".medals").css("display", "block");
     $(".otherbadges").css("display", "none");
+    
+    $(".medalimg img").attr("src", "img/medals/pvsm.png");
+        $(".medaltxt h3").text(allmedals["pvsm"]["name"]);
+        $(".medaltxt p").text(allmedals["pvsm"]["desc"]);
 
 
 })
