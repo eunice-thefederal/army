@@ -23,7 +23,11 @@ $(".main-badge").click(function(){
     $(".interactive-content").css("display", "block")
     $("header").css("display", "none")
     $(".main-badge").css("display", "none")
-    $(".badgeimg img").attr("src", "https://thefederal.com/embed/army-master/img/"+checkdata.force+"/cap-badge.png")
+
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/cap-badge.png")
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["cap"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["cap"]["desc"]);
+
     $(".content h2").css("display","none")
     $("#"+ checkdata.force +"-head").addClass("active")
     
@@ -57,8 +61,9 @@ $('.cap-badge').click(function(){
     var checkdata = $(this).data();
     console.log(checkdata.force)
     
-    $(".badgeimg img").attr("src", "https://thefederal.com/embed/army-master/img/"+checkdata.force+"/cap-badge.png");
-
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/cap-badge.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["cap"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["cap"]["desc"]);
     
 })
 
@@ -68,8 +73,9 @@ $('.shoulder-strap').click(function(){
     // alert("shoulder-strap:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
-    $(".badgeimg img").attr("src", "https://thefederal.com/embed/army-master/img/"+checkdata.force+"/shoulder-strap.png");
-
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/shoulder-strap.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["shoulder"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["shoulder"]["desc"]);
 })
 
 $('.aiguillette').click(function(){
@@ -78,9 +84,24 @@ $('.aiguillette').click(function(){
     // alert("shoulder-strap:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
-    $(".badgeimg img").attr("src", "https://thefederal.com/embed/army-master/img/aiguillette.png");
+    $(".badgeimg img").attr("src", "img/aiguillette.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["aiguillette"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["aiguillette"]["desc"]);
 
 })
+
+$('.collar').click(function(){
+
+    var checkdata = $(this).data();
+    // console.log(checkdata.force)
+    // alert("collar:"+checkdata)
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/collar.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["collar"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["collar"]["desc"]);
+})
+
 
 $('.chest-badge').click(function(){
     var checkdata = $(this).data();
@@ -88,15 +109,18 @@ $('.chest-badge').click(function(){
     // alert("paratrooper-badge:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
-    $(".badgeimg img").attr("src", "https://thefederal.com/embed/army-master/img/"+checkdata.force+"/chest-badges.png");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/chest-badges.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["chestbadge"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["chestbadge"]["desc"]);
 })
 
 $('.rashtriya-rifle').click(function(){
     var checkdata = $(this).data();
-    // console.log(checkdata.force)
-    // alert("rashtriya-rifle:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/rashtriya-rifle.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["rashtriyarifle"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["rashtriyarifle"]["desc"]);
 
 })
 
@@ -107,16 +131,23 @@ $('.assam-rifle').click(function(){
     // alert("assam-rifle:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/assam-rifles.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["assamrifle"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["assamrifle"]["desc"]);
 
 })
-$('.collar').click(function(){
+
+$('.sword').click(function(){
 
     var checkdata = $(this).data();
     // console.log(checkdata.force)
-    // alert("collar:"+checkdata)
+    // alert("assam-rifle:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
-    $(".badgeimg img").attr("src", "https://thefederal.com/embed/army-master/img/"+checkdata.force+"/collar.png");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/sword.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["sword"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["sword"]["desc"]);
+
 })
 
 $('.medals-of-honour').click(function(){
@@ -133,11 +164,67 @@ $('.medals-of-honour').click(function(){
 $('.coas-commendation').click(function(){
 
     var checkdata = $(this).data();
-    // console.log(checkdata.force)
-    alert("collar:"+checkdata)
     $(".medals").css("display", "none");
     $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/commendation-badge.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["coascommendation"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["coascommendation"]["desc"]);
 
 })
+
+
+$('.cas-commendation').click(function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/commendation-badge.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["cascommendation"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["cascommendation"]["desc"]);
+
+})
+
+
+$('.ats-badge').click(function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/ats-badge.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["atcbadge"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["atcbadge"]["desc"]);
+
+})
+$('.master-green').click(function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/master-green.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["mastergreen"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["mastergreen"]["desc"]);
+
+})
+$('.cross-belt').click(function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/cross-belt.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["crossbelt"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["crossbelt"]["desc"]);
+
+})
+$('.red-commendation').click(function(){
+
+    var checkdata = $(this).data();
+    $(".medals").css("display", "none");
+    $(".otherbadges").css("display", "flex");
+    $(".badgeimg img").attr("src", "img/"+checkdata.force+"/red-commendation.png");
+    $(".badgetxt h3").text(forcedata[checkdata.force+"data"]["cdscommendation"]["name"]);
+    $(".badgetxt p").text(forcedata[checkdata.force+"data"]["cdscommendation"]["desc"]);
+
+})
+
 
 
